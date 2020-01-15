@@ -1,0 +1,11 @@
+package com.example.demo.exceptions;
+
+import java.util.Date;
+
+
+public class ErrorDetails {
+	private Date fecha;
+	private String message;
+	private String detalle;
+	
+}

@@ -1,0 +1,53 @@
+package com.example.demo.service.impl;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entidad.Compania;
+import com.example.demo.entidad.Persona;
+import com.example.demo.exceptions.ResourceNotFoundException;
+import com.example.demo.repository.CompaniaRepository;
+import com.example.demo.repository.PersonaRepository;
+import com.example.demo.service.CompaniaService;
+
+@Service
+public class CompaniaServiceImpl implements CompaniaService {
+	
+	@Autowired
+	private CompaniaRepository companiaRepository;
+	
+	@Autowired
+	private PersonaRepository personaRepository;
+
+	@Override
+	public Iterable<Compania> obtenerCompanias(){
+		
+		return companiaRepository.findAll();
+	}
+	
+	//@Transactional(readOnly = false)
+	@Override
+	public Compania asociarCompaniaPersona(Long idCompania, Long idPersona) throws ResourceNotFoundException {
+		Persona persona = personaRepository.findById(idPersona)
+				.orElseThrow(() -> new ResourceNotFoundException("No se encontro"));
+		Compania compania = companiaRepository.findById(idCompania)
+				.orElseThrow(() -> new ResourceNotFoundException("No se encontro la compania con el ID indicado"));
+		persona.setCompania(compania);
+		personaRepository.save(persona);
+		return null;
+	}
+
+	@Override
+	public Persona guardarPersona(Persona persona) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Persona obtenerPersonaPorId(Long id) throws ResourceNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

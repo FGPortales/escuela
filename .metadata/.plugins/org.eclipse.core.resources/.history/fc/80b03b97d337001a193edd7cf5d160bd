@@ -1,0 +1,9 @@
+spring: 
+  application: 
+    name: compania
+  cloud: 
+    config: 
+      uri: http://localhost:8081
+  
+server: 
+  port: 8082

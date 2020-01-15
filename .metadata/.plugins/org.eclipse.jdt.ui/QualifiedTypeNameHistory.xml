@@ -32,8 +32,6 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.support.JpaEntityInformation"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
-<fullyQualifiedTypeName name="com.example.demo.util.CustomRepositoryImpl"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.NoRepositoryBean"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="com.example.demo.util.CustomRepository"/>
@@ -54,10 +52,12 @@
 <fullyQualifiedTypeName name="com.example.demo.repository.PersonaRepository"/>
 <fullyQualifiedTypeName name="com.example.demo.exceptions.ResourceNotFoundException"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="com.example.demo.service.CompaniaService"/>
 <fullyQualifiedTypeName name="com.example.demo.dto.CompaniaReducidaDTO"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
+<fullyQualifiedTypeName name="com.example.demo.util.CustomRepositoryImpl"/>
 </qualifiedTypeNameHistroy>
